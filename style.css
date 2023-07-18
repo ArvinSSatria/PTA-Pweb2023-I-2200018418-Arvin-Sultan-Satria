@@ -1,0 +1,386 @@
+
+header {
+  background-color: #333;
+  padding: 30px;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+h1 {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 17px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: #555;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #777;
+}
+
+  
+  /* Efek Parallax pada Header */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+  }
+  
+  .hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('school.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.6;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+  }
+  
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .btn {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Ubah warna latar belakang menjadi hijau */
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #45a049; /* Ubah warna latar belakang saat dihover */
+  }
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Gaya Logo */
+.hero-content img {
+  transition: transform 0.3s ease;
+}
+
+.hero-content img:hover {
+  transform: scale(1.1);
+}
+
+  /* Gaya Hero Section */
+  
+  .hero {
+    background-image: url('davide-cantelli-e3Uy4k7ooYk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+
+ /* Gaya Procedure Section */
+.procedure {
+  background-color: #f2f2f2;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.procedure-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.procedure h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px; /* Increase the margin to add more spacing */
+}
+
+.procedure ol {
+  text-align: left;
+  display: flex;
+  justify-content: space-between; /* Align steps in a row */
+  flex-wrap: wrap; /* Allow steps to wrap to the next line on smaller screens */
+}
+
+.procedure ol li {
+  font-size: 18px;
+  margin-bottom: 40px; /* Increase the margin to add more spacing */
+  flex-basis: 30%; /* Adjust the width of each step based on the number of steps */
+}
+
+.procedure ol li img {
+  display: block;
+  margin-bottom: 20px; /* Add some spacing between the image and the step text */
+  width: 80px; /* Adjust the size of the image as per your requirement */
+  height: 80px;
+  object-fit: cover; /* Maintain aspect ratio of the image */
+  border-radius: 50%; /* Make the image round */
+}
+
+.procedure ol li p {
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .procedure ol li {
+    flex-basis: 100%; /* On smaller screens, each step takes full width */
+  }
+}
+
+  
+  /* Contoh animasi */
+  .procedure ol li:hover {
+    color: #ff0000; /* Ubah warna teks saat dihover */
+    transform: scale(1.1); /* Ubah ukuran teks saat dihover */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  
+  /* Gaya Requirements Section */
+ 
+.requirements {
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  
+  .requirements-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .requirements h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .requirements ul {
+    text-align: left;
+  }
+  
+  .requirements ul li {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Gaya Schedule Section */
+.schedule {
+  background-color: #f2f2f2;
+  padding: 100px 0;
+}
+
+.schedule-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.schedule h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.schedule table th, .schedule table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff; /* Tambahkan warna latar belakang untuk sel tabel */
+}
+
+.schedule table th {
+  font-weight: bold;
+  background-color: #555; /* Tambahkan warna latar belakang untuk header tabel */
+  color: #fff; /* Tambahkan warna teks untuk header tabel */
+}
+  
+  /* Gaya Contact Section */
+  .contact {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+  }
+  
+  .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .contact ul {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .contact ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Gaya Form Container */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f2f2f2;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan pada form container */
+  border-radius: 10px; /* Tambahkan radius untuk sudut form container */
+}
+
+.form-container h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333; /* Ubah warna teks menjadi hitam */
+}
+
+.form-container form {
+  margin-top: 20px;
+}
+
+.form-container label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #555; /* Ubah warna label menjadi abu-abu */
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-container textarea {
+  resize: vertical; /* Biarkan textarea bisa diresize secara vertikal */
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50; /* Ubah warna latar belakang tombol submit menjadi hijau */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Ubah warna latar belakang tombol submit saat dihover */
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Ubah warna latar belakang saat dihover */
+}
+
+  
+  /* Gaya Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
